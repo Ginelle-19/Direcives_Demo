@@ -7,8 +7,8 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   //name = 'Angular ' + VERSION.major;
-  appName = 'This is a One-way Data binding example..';
-  clientName: string = 'Joseph';
+  appName = 'This is an activity about DIRECTIVES';
+  clientName: string = 'Andrew';
 
   appliedCSSClass = 'green';
   notappliedCSSClass = false;
@@ -19,12 +19,12 @@ export class AppComponent {
   message = '';
 
   onButtonClick() {
-    this.message = 'Button was clicked!';
+    this.message = 'File is saved!';
   }
 
   //Event as an alert()
   showAlert() {
-    alert('Button was clicked!');
+    alert('You dowloaded the file!');
   }
 
   // for two-way data binding demo
@@ -34,13 +34,13 @@ export class AppComponent {
   showElement = false;
 
   //ngFor Demo
-  items = ['Item 1', 'Item 2', 'Item 3'];
+  items = ['Apple', 'Banana', 'Carrots'];
 
   //ngSwitch
   selectedOption = 3;
 
   //ngStyle
-  color = 'green';
+  color = '#ffaa80';
 
   //ngClass
   isBold = true;

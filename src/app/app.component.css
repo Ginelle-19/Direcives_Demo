@@ -1,6 +1,9 @@
-p {
-  font-family: Lato;
+* {
+  font-family: 'Sofia';
 }
+/* p {
+  font-family: Lato;
+} */
 
 .green {
   color: green;
@@ -8,4 +11,11 @@ p {
 
 .blue {
   color: blue;
+}
+.hover {
+  transition: transform 0.8s;
+  margin-right: 5px;
+}
+.hover:hover {
+  transform: scale(1.3);
 }

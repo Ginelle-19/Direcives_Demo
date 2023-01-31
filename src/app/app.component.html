@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
 <!-- <hello name="{{ name }}"></hello> -->
 <h1>
   {{ appName }}
@@ -15,15 +29,15 @@
 
 <!-- Two-way data binding -->
 <input [(ngModel)]="myName" placeholder="Enter your name" />
-<p>Hello, {{ myName }} !!</p>
+<p>My name is, {{ myName }} and I am from WD-302!!</p>
 
 <!-- Event Binding -->
 
-<button (click)="onButtonClick()">Click Me</button>
+<button (click)="onButtonClick()" class="hover">Save File</button>
 
 <p *ngIf="message">{{ message }}</p>
 
-<button (click)="showAlert()">Click Me</button>
+<button (click)="showAlert()" class="hover">Download File</button>
 
 <!-- ngIf Directive -->
 <ng-template [ngIf]="showElement">
@@ -39,8 +53,9 @@
 <!-- ngSwitch Directive -->
 
 <ng-container [ngSwitch]="selectedOption">
-  <p *ngSwitchCase="1">Option 1 is selected</p>
-  <p *ngSwitchCase="2">Option 2 is selected</p>
+  <p *ngSwitchCase="1">Apple is selected</p>
+  <p *ngSwitchCase="2">Banana is selected</p>
+  <p *ngSwitchCase="3">Carrot is selected</p>
   <p *ngSwitchDefault>No option is selected</p>
 </ng-container>
 
